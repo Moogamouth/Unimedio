@@ -11,8 +11,12 @@
 // ==/UserScript==
 
 (function() {
+    let exercise = "";
     function myLoopFunction() {
-        document.getElementsByClassName("H_bo3 _2Hg6H")[0].getElementsByTagName("span")[2].remove();
+        exercise = document.getElementsByClassName("H_bo3 _2Hg6H")[0];
+        if (exercise.getElementsByTagName("button")) {
+            exercise.getElementsByTagName("span")[2].remove();
+        }
     }
     setInterval(myLoopFunction, 100);
 })();
