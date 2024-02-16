@@ -14,7 +14,7 @@
     let exercise = "";
     function myLoopFunction() {
         exercise = document.getElementsByClassName("H_bo3 _2Hg6H")[0];
-        if (exercise.getElementsByTagName("button")) {
+        if (exercise.getElementsByTagName("button")[0]) {
             exercise.getElementsByTagName("span")[2].remove();
         }
     }
